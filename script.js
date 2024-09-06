@@ -1,7 +1,7 @@
 // Get the form, input, and todos unordered list elements by their IDs
 const form = document.getElementById('form')
 const input = document.getElementById('input')
-const todosUL = document.getElementById('todos')
+const taskList = document.getElementById('todos') // Renamed todosUL to taskList
 
 // Retrieve todos from local storage and parse them into an array
 const todos = JSON.parse(localStorage.getItem('todos'))
@@ -53,7 +53,7 @@ function addTodo(todo) {
         }) 
 
         // Add the new todo element to the unordered list
-        todosUL.appendChild(todoItem)
+        taskList.appendChild(todoItem) // Updated to taskList
 
         input.value = ''  // Clear the input field
 

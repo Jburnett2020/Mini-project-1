@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Specifies the character encoding for the HTML document -->
+    <meta charset="UTF-8" />
+    <!-- Ensures the page is responsive and adjusts to different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Links to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- The title of the page that appears in the browser tab -->
+    <title>Todo List</title>
+  </head>
+  <body>
+    <!-- Main heading of the page -->
+    <h1>Todos</h1>
+    <!-- Form for adding new todos -->
+    <form id="form">
+      <!-- Input field where users can type their todos -->
+      <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off" />
+
+      <!-- Unordered list where the todos will be displayed -->
+      <ul class="todos" id="todos"></ul>
+    </form>
+    <!-- Small text providing instructions on how to interact with the todos -->
+    <small>
+      Left click to toggle completed. <br />
+      Right click to delete todo
+    </small>
+
+    <!-- Links to the external JavaScript file for adding functionality to the page -->
+    <script src="script.js"></script>
+  </body>
+</html>

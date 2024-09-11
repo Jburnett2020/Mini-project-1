@@ -1,74 +1,85 @@
+/* Importing the 'Poppins' font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
-    * {
-      box-sizing: border-box;
-    }
-    
-    body {
-      background-color: #1e1e1e;
-      color: #d1d1d1;
-      font-family: 'Poppins', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    
-    h1 {
-      color: #11bcff;
-      font-size: 10rem;
-      text-align: center;
-      opacity: 0.7;
-    }
-    
-    form {
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-      max-width: 100%;
-      width: 400px;
-    }
-    
-    .input {
-      border: none;
-      color: #d1d1d1;
-      font-size: 2rem;
-      padding: 1rem 2rem;
-      display: block;
-      width: 100%;
-      background-color: #333;
-    }
-    
-    .input::placeholder {
-      color: #888;
-    }
-    
-    .input:focus {
-      outline-color: #11bcff;
-    }
-    
-    .todos {
-      background-color: #2a2a2a;
-      padding: 0;
-      margin: 0;
-      list-style-type: none;
-    }
-    
-    .todos li {
-      border-top: 1px solid #444;
-      cursor: pointer;
-      font-size: 1.5rem;
-      padding: 1rem 2rem;
-    }
-    
-    .todos li.completed {
-      color: #777;
-      text-decoration: line-through;
-    }
-    
-    small {
-      color: #888;
-      margin-top: 3rem;
-      text-align: center;
-    }
-    
+/* Applying box-sizing to all elements to include padding and border in the element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Styling the body to have a dark background, light text color, and centering content */
+body {
+  background-color: #1e1e1e;  /* Dark background color */
+  color: #d1d1d1;  /* Light text color */
+  font-family: 'Poppins', sans-serif;  /* Using the imported 'Poppins' font */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;  /* Full viewport height */
+  margin: 0;  /* Remove default margin */
+}
+
+/* Styling for h1 header with blue text, large font size, and partial opacity */
+h1 {
+  color: #11bcff;  /* Light blue text color */
+  font-size: 10rem;  /* Large font size */
+  text-align: center;  /* Centering text */
+  opacity: 0.7;  /* Slight transparency */
+}
+
+/* Styling for the form element with shadow and width limitations */
+form {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);  /* Adding shadow around the form */
+  max-width: 100%;  /* Form width can't exceed 100% of its container */
+  width: 400px;  /* Fixed width of 400px */
+}
+
+/* Input field styling: large font, dark background, and light text */
+.input {
+  border: none;  /* No border */
+  color: #d1d1d1;  /* Light text color */
+  font-size: 2rem;  /* Large font size */
+  padding: 1rem 2rem;  /* Padding around the text */
+  display: block;  /* Display as block element */
+  width: 100%;  /* Full width input */
+  background-color: #333;  /* Dark gray background color */
+}
+
+/* Placeholder text styling inside the input */
+.input::placeholder {
+  color: #888;  /* Light gray placeholder text */
+}
+
+/* Input focus outline color */
+.input:focus {
+  outline-color: #11bcff;  /* Blue outline when input is focused */
+}
+
+/* Styling the unordered list of to-dos with no list style and dark background */
+.todos {
+  background-color: #2a2a2a;  /* Darker gray background for the list */
+  padding: 0;  /* No padding */
+  margin: 0;  /* No margin */
+  list-style-type: none;  /* No bullet points */
+}
+
+/* Styling individual list items within the to-do list */
+.todos li {
+  border-top: 1px solid #444;  /* Thin gray border between items */
+  cursor: pointer;  /* Change cursor to pointer on hover */
+  font-size: 1.5rem;  /* Medium font size */
+  padding: 1rem 2rem;  /* Padding around the text */
+}
+
+/* Styling for completed to-do items: gray text and strikethrough */
+.todos li.completed {
+  color: #777;  /* Gray color for completed items */
+  text-decoration: line-through;  /* Strikethrough for completed items */
+}
+
+/* Styling for small text, such as footnotes or additional information */
+small {
+  color: #888;  /* Light gray color */
+  margin-top: 3rem;  /* Space above the small text */
+  text-align: center;  /* Centering the text */
+}
